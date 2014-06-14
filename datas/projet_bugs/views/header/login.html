@@ -4,7 +4,7 @@
 
 <div id="form" class="inlogin">
 
-	<form method="POST" action="index.php">
+	<form method="POST" action="index.php?<?= $encours[1];?>">
 		<input class="inpname" required="required" type="text" name="login" autofocus placeholder="Login" />
 		<input class="inppass" required="required" type="password" name="pass" class="pull-left" placeholder="Pass"/>
 		<input class="bntLog" style="margin-right:6px;" type="submit" value="Envoyer"/>

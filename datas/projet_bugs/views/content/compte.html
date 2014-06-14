@@ -1,0 +1,54 @@
+
+<div id="compte">
+
+
+	<h1>Mon compte</h1>
+
+		<div id="profilaff">
+		
+		<h1>  </h1>
+
+			<h2>Mon profil</h2>
+
+			
+
+						<div id="adresseaff">
+							<h3>Mes coordonnées:</h3>
+
+							<p>
+								<?= $prenom." ". $nom."<br/>". $adresse."<br/>". $codepostal." ". $ville ."<br/> Societe :".$societé."<br/><br/> tel :".$tel."<br/> email :".$email  ?>
+							</p>
+
+							<button>
+								<a href="index.php?page=compte&modif=true">modifier mes coordonnées</a>
+							</button>	
+
+						</div>
+
+						<div id="infoaff">
+							<h3>Mes informations :</h3>
+
+							<p>
+								mes points de fidelité : <?= $point  ?> <br>
+								mes commandes precedentes : 
+							</p>
+
+						</div>
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
