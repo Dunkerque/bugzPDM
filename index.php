@@ -2,17 +2,15 @@
 session_start();
 header('Content-Type: text/html; charset=utf-8');
 require('config.php');
-$classPath = scandir("model/");
+
 function __autoload($classname)
 {
     $classname = strtolower($classname);
-    if(in_array($classname, $classPath) === true)
     require('model/'.$classname.'.class.php');
-    return false;
 }
 try
 {
-    $db = new PDO($db_connector.':host='.$db_host.';port='.$db_port.';dbname='.$db_database, $db_user, $db_pass);
+    $db = new PDO($db_connector.':host='.$db_host.';port='.$db_port.';dbname='.$db_database, $db_user, $db_pass, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch (Exception $e)
 {
