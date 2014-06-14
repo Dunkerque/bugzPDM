@@ -19,7 +19,7 @@ catch (Exception $e)
     die("Internal Error");
 }
 
-$secuViews = scandir("apps/");
+$secuViews = scandir("app/");
 
 if (isset($_GET['page']))
 {
