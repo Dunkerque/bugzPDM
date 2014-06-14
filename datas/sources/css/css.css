@@ -1,0 +1,870 @@
+*
+				{
+				margin: 0px;
+				/*Para manter tamanho de "caixas" independentemente do padding...*/
+				-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+				/*outline: 1px dotted rgba(255, 0, 0, 0.3);*/
+				}
+
+a
+				{
+				cursor: pointer;
+				color: currentcolor;
+				text-decoration: none;
+				font-family: 'Open Sans', 'sans-serif';
+				}
+
+a:hover
+				{
+				
+				}
+
+#adresseaff
+				{
+				margin: 1rem;
+				}
+
+#adresseaff>h3
+				{
+				margin:;
+				font-size: 1.3rem;
+				color: white;
+				}
+
+#adresseaff>p
+				{
+				color: white;
+				}
+
+.BgCol00
+				{
+				background-color: rgba(30, 30, 30, 1);
+				}
+
+.BgCol01
+				{
+				background-color: rgba(0, 0, 0, 1);
+				}
+
+.BgCol02
+				{
+				background-color: rgba(69, 75, 80, 1);
+				}
+
+.BgCol03
+				{
+				background-color: rgba(166, 230, 170, 1);
+				}
+
+.BgCol04
+				{
+				background-color: rgba(49, 55, 61, 1);
+				}
+
+.bntLog
+				{
+				width: 50%;
+				max-width: 4.55em;
+				width: 4.5em;
+				}
+
+.bgnav, .bgfoot
+				{
+				background-color: rgba(101, 124, 87, 1);
+                color: rgba(255, 255, 255, 1);
+				}
+
+body
+				{
+				background-color: rgba(68, 79, 69, 1);
+			/*	background-image: url("../img/background-grass.jpg");*/
+				}
+
+.canvas
+				{
+				box-shadow: 0 0 6px -4px rgb(0, 0, 0) inset;
+				height: 100px;
+				margin: 0.1em 0 0.3em;
+				}
+
+.canvas1_3
+				{
+				box-shadow: 0 0 6px -4px rgb(0, 0, 0) inset;
+				height: 100px;
+				margin: 0.1em 0 0.3em;
+				}
+
+.canvas img 
+				{
+				clip: rect(5px, 285px, 95px, 5px);
+				position: absolute;
+				}
+
+.canvas1_3 img
+				{
+				clip: rect(5px, 192px, 95px, 5px);
+				position: absolute;
+				}
+
+.CarteMenu
+				{
+				width: 100%;
+				float: left;
+				}
+
+#carte_content>article
+				{
+				float: left;
+				height: 20em;
+				margin: 0.5em 1% 0.3em;
+				overflow: hidden;
+				padding: 0.3em 0.5em;
+				width: 48%;
+				border-radius: 0.1em;
+				background-color: rgba(101, 124, 87, 1);
+				color: rgba(0, 0, 0, 1);
+				}
+
+#carte_content>article h3
+				{
+				text-align: left;
+				color: rgba(255, 165, 0, 1)
+				}
+
+#carte_content>article form
+				{
+				text-align: center;
+				}
+
+#carte_content article img
+				{
+
+				}
+
+#carte_content p
+				{
+				font-size: .7em;
+				line-height: 1.1em;
+				text-align: justify;
+				padding-bottom: 0.3em;
+				}
+
+#carte_nav
+				{
+				background:black;
+				}
+
+#carte_nav_list
+				{
+				width:100%;
+				list-style: none;
+				}
+
+#carte_nav_list li
+				{
+				float:left;
+				width:20%;
+				}
+
+#carte_nav_list li a
+				{
+				display:block;
+				height:2rem;
+				text-align: center;
+				line-height: 1.8em;
+				background: rgba(101, 124, 87, 1);
+				color: rgba(255, 255, 255, 1);
+				}
+
+#carte_article
+				{
+				float:left;
+				width:66.6666%;
+				}
+
+#carte_panier
+				{
+				float:left;
+				width:33.3333%;
+				padding-top: 0.5rem;
+				text-align: center;
+				background-color: rgba(101, 124, 87, 1);
+				}
+
+#comments
+				{
+				margin-bottom: 2.5rem;
+				}
+
+#comments .commentlist ul
+				{
+				list-style: none;
+				}
+
+#comments .commentlist li
+				{
+				background-color: #6c6c6c;
+				color: #c6dbbe;
+				margin: 0 0 0.7rem 0;
+				padding: 1rem;
+				list-style: none;
+				}
+
+#comments .commentlist li a
+				{
+				color: #FFFF00;
+				}
+
+#comments .commentlist .author .name
+				{
+				font-weight: bold;
+				}
+
+#comments .commentlist .datecomm
+				{
+				font-size: smaller;
+				}
+
+#comments .commentlist p
+				{
+				margin: 0.625rem 0.4rem 0.7rem 0;
+				font-weight: normal;
+				text-transform: none;
+				}
+
+#comments .commentlist li .avatar
+				{
+				float: right;
+				border: 0.05rem solid #EEEEEE;
+				margin: 0 0 0 0.7rem;
+				}
+
+#compte>h1
+				{
+				font-size:2rem;
+				color: orange;
+				}
+
+#container
+				{
+				width: 14em;
+				}
+
+#container label
+				{
+				color: rgba(220, 220, 220, 1);
+				float: left;
+				line-height: 1em;
+				margin-right: 0.3em;
+				margin-top: 0.3em;
+				text-align: right;
+				width: 14em;
+				}
+
+#coord
+				{
+				margin: 0 auto;
+				width: 100%;
+				}
+
+#coord p
+				{
+				padding: 0 0.3em;
+				}
+
+#coord h2
+				{
+				font-size: 1.7rem;
+				color: orange;
+				padding: 0.1em 0 0.5em;
+				}
+    
+#coord h3
+				{
+				font-size: 1.3rem;
+				color: yellow;
+				padding: 0.1em 0 0.3em;
+				}
+
+#coord iframe
+				{
+				z-index: 0;
+				width: 66.6666%;
+				float: right;
+				}
+
+#coord>p
+				{
+				font-size: 1.3rem;
+				color: grey;
+				}
+
+#coord>span
+				{
+				font-size: 1rem;
+				color: pink;
+				}
+
+.fixT
+				{
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				}
+
+.fixB
+				{
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				}
+
+.FlL
+				{
+				float: left;
+				}
+
+.FlR
+				{
+				float: right;
+				}
+
+.FormInscr
+				{
+				width: 28em;
+				margin-left: 1em
+				}
+
+.foot
+				{
+				font-family: 'Signika Negative', 'sans-serif';
+				font-size: 0.7em;
+				padding: 0.3em 0;
+				text-align: center;
+				}
+
+#footer
+				{
+				clear:both;
+				}
+
+
+
+header
+				{
+				height: 7.5em;
+				}
+
+h1
+				{
+				color: rgb(255, 165, 0);
+				font-family: 'abugslife';
+				font-size: 4em;
+				text-align: center;
+				line-height: 2em;
+				}
+
+
+h2, h3
+				{
+				font-family: 'Trebuchet MS', 'sans-serif';
+				text-transform: uppercase;
+				}
+
+h4, h5, h6
+				{
+				font-family: 'Arial', 'sans-serif';
+				text-transform: uppercase;
+				}
+
+
+.HomeSlider
+				{
+				width: 100%;
+				height: 10em;
+				background-color: orange;
+				background-image: url("../img/Food10.jpg");
+				}
+
+html
+				{
+				font-family: 'Open Sans', 'sans-serif';
+				}
+
+#infoaff
+				{
+				margin: 1rem;
+				}
+
+#infoaff>h3
+				{
+				font-size: 1.3rem;
+				color: white;
+				}
+
+#infoaff>p
+				{
+				color: white;
+				}
+
+.inframeimg
+				{
+				background-color: rgba(98, 142, 22, 1);
+				color: rgba(255, 255, 255, 1);
+				height: 480px;
+				padding: 0.3em 0.3em 0.3em 0.6em;
+				text-align: justify;
+				width: 33.3333%;
+				}
+
+.inframeimg p
+				{
+				font-family: sans-serif;
+				font-size: 0.85em;
+				}
+
+
+.indication
+				{
+				color: rgba(255, 255, 255, 1);
+				font-size: 0.8em;
+				line-height: 1.7em;
+				margin-right: 1em;
+				text-align: right;
+				}
+
+.inlogin
+				{
+				position: relative;
+				top: -8.5em;
+				width: 230px;
+				}
+
+input
+				{
+				background-color: rgba(255, 255, 255, 0.1);
+				border: medium none;
+				color: rgba(255, 165, 0, 1);
+				margin-top: 0.125em;
+				padding: 0.3em;
+				margin: 0.0625em;
+				text-align: center;
+				max-width: 15em;
+				}
+
+input .inpname
+				{
+
+				}
+
+input .inppass
+				{
+
+				}
+
+input .inpbtn
+				{
+				border-radius: 0.125em;
+				margin-right:6px;
+				width: 5em;
+				}
+
+input .inpbtn:hover
+				{
+				background-color: rgba(255, 255, 255, 0.16);
+				}
+
+input.radio
+				{
+				border: none;
+				background-color: red
+				}
+
+
+
+.InpUseName
+				{
+
+				}
+
+.InpPassUse
+				{
+
+				}
+
+
+.InpSubValid
+				{
+
+				}
+
+.Inthebox1_3
+				{
+				
+				}
+
+
+
+.Inthebox33
+				{
+				float:left;
+				width:33.3333%;
+				padding: 0 0.3em;
+				}
+
+.Inthebox33 h3
+				{
+				color: rgba(255, 165, 0, 1)
+				}
+
+
+
+.K_line
+				{
+				max-width: 960px;
+				width: 100%;
+				margin: 0 auto;
+				border-top: 0px solid rgba(20, 20, 20, 1);
+				}
+
+.LogOut
+				{
+				position: relative;
+				}
+
+.LogIn
+				{
+				position: relative;
+				}
+
+.main
+				{
+				/*background-color: rgba(100, 160, 5, 1);*/
+				bottom: 0;
+				min-height: 50%;
+				overflow: hidden;
+				padding-bottom: 1.8em;
+				position: relative;
+				top: 0;
+				height: 100%;
+				}
+
+.message
+				{
+				color: rgba(81, 117, 18, 1);
+				}
+
+nav
+				{
+				line-height: 2.5em;
+				color: rgba(255, 255, 255, 1);
+				}
+
+nav ul
+				{
+				left: 3em;
+				}
+
+
+nav ul:before
+				{
+				content: "|";
+				}
+
+nav ul:after
+				{
+				content: "|";
+				}
+
+nav ul li
+				{
+				display: inline;
+				line-height: 2.5em;
+				}
+
+p
+				{
+				font-weight: 100;
+				font-family: 'Open Sans', 'sans-serif';
+				}
+
+p.alertmsg
+				{
+				color: rgba(220, 220, 220 ,1);
+				position: relative;
+				top: -3em;
+				}
+
+.point_article
+				{
+				float:left;
+				width:30%;
+				margin-left: 3%;
+				}
+
+.panier_adresse
+				{
+				float:left;
+				width:50%;
+				}
+
+#profilaff
+				{
+				background-color: black;
+				width: 30%;
+				}
+
+
+#profilaff>h2
+				{
+				margin:0.7rem;
+				font-size:1.5rem;
+				color: orange;
+				}
+
+.required
+				{
+				color: rgba(256, 0, 0, 1);
+				}
+
+.row
+				{
+
+				}
+
+.TxtCol00
+				{
+				color: rgba(255, 255, 255, 1);
+				}
+
+.TxtCol01
+				{
+				color: rgba(33, 66, 99, 1);
+				}
+
+.TxtCol02
+				{
+				color: rgba(232, 255, 255, 1);
+				}
+
+.TxtCol03
+				{
+				color: rgba(154, 184, 154, 1);
+				}
+
+.TxtCol04
+				{
+				color: rgba(255, 255, 238, 1);
+				}
+
+.txterror
+				{
+				color: rgba(81, 117, 18, 1);
+				left: 0em;
+				position: relative;
+				top: -1.9em;
+				}
+
+.txtdescrip
+				{
+				height: 153px;
+				}
+
+ul, ol
+				{
+				margin-left: 0;
+				padding-left: 0;
+				}
+
+
+.essay
+				{
+				position: absolute;
+				bottom: 30px;
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
