@@ -1,0 +1,9 @@
+<form action="index.php?page=post&id=<?=$this->id?>" method="POST">
+	<fieldset class="post">
+		<legend>
+			<input style="width:600px" type="text" name="titre" value="<?=$this->titre?>"/>
+		</legend>
+		<textarea name="contenu" rows=30 style="width:100%"><?=$this->contenu?></textarea>
+	</fieldset>
+	<center><input type="submit" value="Editer" name="edit"/></center>
+</form>

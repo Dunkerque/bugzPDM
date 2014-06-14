@@ -1,0 +1,54 @@
+.header
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:15%;
+	background-color:#666666;
+	text-align:center;
+}
+
+.footer
+{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	height:5%;
+	text-align:center;
+	background-color:#666666;
+}
+
+.menu
+{
+	position:absolute;
+	top:15%;
+	bottom:5%;
+	left:0px;
+	right:0px;
+	width:15%;
+	background-color:#666666;
+}
+
+.content
+{
+	position:absolute;
+	top:15%;
+	bottom:5%;
+	left:15%;
+	right:0px;
+	background-color:grey;
+	overflow:auto;
+}
+
+.post
+{
+	margin-bottom:15px;
+}
+
+.post legend
+{
+	font-size:2em;
+	text-align:center;
+}

@@ -1,0 +1,15 @@
+<fieldset class="post">
+	<legend>
+		<a href="index.php?page=post&id=<?=$this->id?>">
+			<?=$this->titre?>
+		</a>
+	</legend>
+	<?=$this->contenu?>
+</fieldset>
+<form action="index.php?page=post&id=<?=$this->id?>" method="POST">
+	<center>
+		Entrez le titre du post pour le supprimer<br />
+		<input type="text" name="secure" placeholder="Titre du post à supprimer"/>
+		<input type="submit" value="Supprimer" name="delete"/>
+	</center>
+</form>
