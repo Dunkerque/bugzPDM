@@ -1,87 +1,100 @@
 <?php
 class User
 {
-	private $id;
+    private $id;
     private $login;
-	private $prenom;
-	private $nom;
+    private $prenom;
+    private $nom;
     private $tel;
     private $adresse;
     private $cp;
     private $ville;
-	private $mail;
+    private $mail;
     private $societe;
     private $pass;
     private $point;
-	private $admin;
+    private $admin;
 
-	public function construct()
-	{
+    public function __construct($tab)
+    {
+//        $this->login= $tab['login'];
+
+
+        if($this->setLogin($tab['login']) == null)
+
+            throw new Exception("Les champs login et pass sont obligatoires");
+
+
 
 	}
-	public function passwordVerify($password)
-	{
-		if ($this->pass == $password)
-			return true;
-		return false;
-	}
-	public function getId()
-	{
-		return $this->id;
-	}
-	public function getLogin()
-	{
-		return $this->login;
-	}
+    public function passwordVerify($password)
+    {
+        if ($this->pass == $password)
+            return true;
+        return false;
+    }
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function getLogin()
+    {
+        return $this->login;
+    }
     public function getPrenom()
-	{
-		return $this->prenom;
-	}
-	public function getNom()
-	{
-		return $this->nom;
-	}
-	public function getTel()
-	{
-		return $this->tel;
-	}
-	public function getAdresse()
-	{
-		return $this->adresse;
-	}
-	public function getcp()
-	{
-		return $this->cp;
-	}
-	public function getVille()
-	{
-		return $this->ville;
-	}
-	public function getMail()
-	{
-		return $this->mail;
-	}
-	public function getSociete()
-	{
-		return $this->societe;
-	}
-	public function getPass()
-	{
-		return $this->pass;
-	}
-	public function getPoint()
-	{
-		return $this->point;
-	}
+    {
+        return $this->prenom;
+    }
+    public function getNom()
+    {
+        return $this->nom;
+    }
+    public function getTel()
+    {
+        return $this->tel;
+    }
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
+    public function getcp()
+    {
+        return $this->cp;
+    }
+    public function getVille()
+    {
+        return $this->ville;
+    }
+    public function getMail()
+    {
+        return $this->mail;
+    }
+    public function getSociete()
+    {
+        return $this->societe;
+    }
+    public function getPass()
+    {
+        return $this->pass;
+    }
+    public function getPoint()
+    {
+        return $this->point;
+    }
     public function getAdmin()
-	{
-		return $this->admin;
-	}
+    {
+        return $this->admin;
+    }
 
     public function setLogin($login)
     {
         if ($login != '')
+        {
             $this->login = $login;
+            return true;
+        }
+        return false;
+
     }
     public function setPrenom($prenom)
     {

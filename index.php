@@ -1,5 +1,6 @@
 <?php
 session_start();
+var_dump($_SESSION);
 header('Content-Type: text/html; charset=utf-8');
 require('config.php');
 

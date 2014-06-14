@@ -1,10 +1,14 @@
 
-<p class="alertmsg">
 
-<?php 
+
+<div id="form" class="inlogin">
+    <a href="index.php?page=logout"><input  type="submit" value ='se deconnecter'  id="logoutbtn" placeholder="LogOut"></a>
+    <p>
+
+        <?php
 echo $_SESSION['login']." est connecté !";
 ?>
 
-</p>
+    </p>
 
-<input class="inpbtn" type="submit" href="index.php?page=logout" id="logoutbtn" placeholder="LogOut">
+</div>
