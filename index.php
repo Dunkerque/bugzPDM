@@ -35,9 +35,9 @@ $secuViews =  array("home" => "content/home",
 $page = 'content/home';
 if (isset($_GET['page']))
 {
-    $views = strtolower(htmlentities($_GET['page']));
-    if (in_array($views, $secuViews) === true)
-        $page = $views;
+//    $views = strtolower(htmlentities($_GET['page']));
+    if (  isset($secuViews[$_GET['page']]) )
+            $page = $secuViews[$_GET['page']];
     else
         $page = '404';
 }
