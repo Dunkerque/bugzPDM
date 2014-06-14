@@ -2,53 +2,87 @@
 class Menu
 {
     private $id;
-    private $titre;
-    private $contenu;
-    private $date;
-    private $id_author;
-    private $author;
+    private $libelle;
+    private $descriptif;
+    private $prix_livraison;
+    private $prix_emporter;
+    private $url;
 
     public function __construct()
     {
 
     }
-    public function display()
-    {
-        require('views/post.html');
-    }
-    public function displayEdit()
-    {
-        require('views/postedit.html');
-    }
-    public function displayDelete()
-    {
-        require('views/postdelete.html');
-    }
-    public function displayEditLink()
-    {
-        require('views/posteditlink.html');
-    }
+
+
+
+
     public function getId()
     {
         return $this->id;
     }
-    public function getTitre()
+
+    public function setLibelle($libelle)
     {
-        return $this->titre;
+        $this->libelle = $libelle ;
     }
-    public function getContenu()
+
+
+    public function getLibelle()
     {
-        return $this->contenu;
+        return $this->libelle;
     }
-    public function setTitre($titre)
+
+    public function setDescriptif($descriptif)
     {
-        if ($titre != '')
-            $this->titre = $titre;
+        $this->descriptif = $descriptif;
     }
-    public function setContenu($contenu)
+
+    public function getDescriptif()
     {
-        if ($contenu != '')
-            $this->contenu = $contenu;
+        return $this->descriptif;
     }
+
+
+
+
+    public function setPrix_livraison($prix_livraison)
+    {
+
+        $this->prix_livraison = $prix_livraison;
+    }
+
+    public function getPrix_livraison()
+    {
+        return $this->prix_livraison;
+    }
+
+    public function setPrix_emporter($prix_emporter)
+    {
+        $this->prix_emporter = $prix_emporter;
+    }
+
+    public function getPrix_emporter()
+    {
+        return $this->prix_emporter;
+    }
+
+    public function serUrl($url)
+    {
+        $this->url = $url;
+    }
+
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+
+
+
+
+
+
+
+
 }
 ?>
