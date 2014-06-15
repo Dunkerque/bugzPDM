@@ -15,20 +15,24 @@ class User
     private $point;
     private $admin;
 
-    public function __construct($tab)
+    public function __construct($tab=null)
     {
 //        $this->login= $tab['login'];
 
+if($tab!= null)
+{
+    if($this->setLogin($tab['login']) == null)
 
-        if($this->setLogin($tab['login']) == null)
+        throw new Exception("Les champs login et pass sont obligatoires");
+}
 
-            throw new Exception("Les champs login et pass sont obligatoires");
 
 
 
 	}
     public function passwordVerify($password)
     {
+
         if ($this->pass == $password)
             return true;
         return false;

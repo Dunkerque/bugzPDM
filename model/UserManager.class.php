@@ -9,9 +9,11 @@ class UserManager
 	}
 	public function getUserByLogin($login)
 	{
+
 		$res = $this->db->query("SELECT * FROM user WHERE login=".$this->db->quote($login));
 		$res->setFetchMode(PDO::FETCH_CLASS, 'User');
 		$user = $res->fetch();
+
 		return $user;
 	}
 

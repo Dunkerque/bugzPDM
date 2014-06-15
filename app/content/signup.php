@@ -7,12 +7,12 @@ $error = "";
 if(isset($_POST['login'])){
     try{
 
-        $register = new User($_POST);
+        $newUser = new User($_POST);
 
-        var_dump($register);
+        var_dump($newUser);
 
             $registerManager = new UserManager($db);
-            $registerManager->registerUser($register);
+            $registerManager->registerUser($newUser);
     }
     catch(Exception $e)
     {
